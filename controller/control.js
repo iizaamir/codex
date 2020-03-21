@@ -70,15 +70,15 @@ exports.viewShops = async function (req, res, next) {
 // };
 
 // exports.updateShops = async function (req, res, next) {
-    
+//     var id = req.query.id;
 //     var city = req.body.city;
 //     var email = req.body.email;
 //     var password = req.body.password;
-//     var id = req.params.id;
+//     // var id = req.params.id;
 //     // var id = req.body.id;
 //     pool.getConnection().then(conn => {
-//         var sql = `UPDATE shopes SET city=?, email=?, password=? WHERE id = ?`
-//         var data = [city, email, password, id];
+//         var sql = `UPDATE shopes SET city=?, email=?, password=? WHERE id=${id}`
+//         var data = [city, email, password];
 //         conn.query(sql,data).then((rows) => {
 //             res.json({
 //                 status: "good"
